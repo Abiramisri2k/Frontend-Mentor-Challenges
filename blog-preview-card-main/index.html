@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #F4D04E;
+      font-family: "Figtree", sans-serif;
+    }
+    .container{
+      width: 390px;
+      padding: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 20px;
+      color: #111111;
+      box-shadow: 8px 8px #000;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .container:hover{
+      box-shadow: 16px 16px #000;
+    }
+    .container:hover h1{
+      color: #F4D04E;
+    }
+    .image-box img{
+       width: 100%;
+       border-radius: 10px; 
+    }
+    .tag{
+      margin-top: 24px;
+    }
+    .tag span{
+      padding: 4px 12px;
+      background-color: #F4D04E;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .tag p{
+      margin-top: 12px;
+      font-size: 14px;
+      color: #111111;
+    }
+    h1{
+      font-size: 24px;
+      margin-top: 12px;
+      line-height: 150%;
+      font-weight: 800;
+    }
+    p{
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6B6B6B;
+      font-weight: 500;
+    }
+    .profile{
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+    }
+    .profile img{
+      width: 32px;
+      height: 32px;
+    }
+    .profile span{
+      margin-left: 12px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    @media (min-width: 375px){
+      .container{
+        width: 320px;
+      }
+      .image-box img{
+       width: 100%;
+      }
+      .tag span{
+        font-size: 12px;
+      }
+      .tag p{
+        font-size: 12px;
+      }
+      h1{
+        font-size: 20px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="image-box">
+        <img src="assets/images/illustration-article.svg" alt="blog.img">
+      </div>
+      <div class="tag">
+        <span>Learning</span>
+        <p>Published 21 Dec 2023</p>
+      </div>
+      <h1>HTML & CSS foundations</h1>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="profile">
+        <img src="assets/images/image-avatar.webp" alt="profile">
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+</body>
+</html>
