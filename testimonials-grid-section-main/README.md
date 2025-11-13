@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/testimonial-grid-oRXc0sr7-1)
+- [Live Site URL](https://steady-biscuit-4810cf.netlify.app/)
 
 ## My process
 
