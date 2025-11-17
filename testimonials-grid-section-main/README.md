@@ -78,7 +78,7 @@ Implement dark/light mode toggling for better UX
 ### Useful resources
 
 - [MDN Web Docs – CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) - helped me structure the layout properly.
-- [Frontend Mentor – Four Card Feature Section Challenge](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK) - original challenge source.
+- [Frontend Mentor – Testimonials-grid-section Challenge](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) - original challenge source.
 - [CSS Tricks – Flexbox & Grid Guides](https://css-tricks.com/snippets/css/complete-guide-grid/) - for better understanding layout behaviors.
 
 ## Author

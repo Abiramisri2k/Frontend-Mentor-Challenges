@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Blue-100: hsl(225, 100%, 94%);
+    --Blue-700: hsl(245, 75%, 52%);
+    --Blue-50: hsl(225, 100%, 98%);
+    --Gray-600: hsl(224, 23%, 55%);
+    --Blue-950: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+    --Blue-600: hsl(245, 82%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Blue-100);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 16px;
+    color: var(--Blue-950);
+}
+
+.container .hero-img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.main-content {
+    margin: 24px;
+    text-align: center;
+}
+
+.order h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.order p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--Gray-600);
+    font-weight: 500;
+}
+
+.plan {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    background-color: var(--Blue-50);
+    font-weight: 700;
+}
+.plan img{
+    width: 36px;
+    height: 36px;
+}
+.plan-info {
+    padding-right: 30px;
+    text-align: left;
+}
+
+.plan-info h4 {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--Blue-950);
+}
+
+.plan-info span {
+    font-size: 12px;
+    color: var(--Gray-600);
+    font-weight: 500;
+}
+
+.plan>span {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--Blue-700)
+}
+
+.plan>span:hover {
+    cursor: pointer;
+    color: var(--Blue-600);
+}
+
+.paybtn .btn {
+    margin: 20px 0;
+    padding: 10px 16px;
+    background-color: var(--Blue-700);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: var(--Blue-100) 0px 8px 24px;
+}
+
+.paybtn .btn:hover {
+    cursor: pointer;
+    background-color: var(--Blue-600);
+}
+
+.paybtn span {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--Gray-600);
+}
+
+.paybtn span:hover {
+    cursor: pointer;
+    color: var(--Blue-950);
+}
+
+@media (max-width:700px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+    .container {
+        width: 80%;
+    }
+
+}
