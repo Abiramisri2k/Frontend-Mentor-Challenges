@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+    :root {
+      --Blue-200: hsl(193, 38%, 86%);
+      --Green-300: hsl(150, 100%, 66%);
+      --Blue-600: hsl(217, 19%, 38%);
+      --Blue-900: hsl(217, 19%, 24%);
+      --Blue-950: hsl(218, 23%, 16%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background-color: var(--Blue-950);
+    }
+
+    .container {
+      width: clamp(300px, 50vw, 350px);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 16px;
+      padding: 24px;
+      background-color: var(--Blue-900);
+      color: var(--Blue-200);
+      text-align: center;
+    }
+
+    .container h2 {
+      color: var(--Green-300);
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    #advice-text {
+      margin-top: 24px;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .divider {
+      margin: 24px 0;
+      width: 100%;
+    }
+
+    .btn {
+      width: 45px;
+      height: 45px;
+      padding: 16px;
+      border-radius: 50%;
+      background-color: var(--Green-300);
+      margin: 0 auto;
+      margin-bottom: -45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 30px var(--Green-300);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h2>Advice <span id="advice-id"># 1</span></h2><!-- Advice ID goes here -->
+    <p id="advice-text">Advice loading...</p>
+    <img src="./images/pattern-divider-desktop.svg" alt="divider" class="divider">
+    <div class="btn">
+      <img src="./images/icon-dice.svg" alt="dice">
+    </div>
+  </main>
+
+  <script>
+    const Advice_text = document.getElementById('advice-text');
+    const Advice_id = document.getElementById('advice-id');
+    const btn = document.querySelector(".btn");
+
+    async function getAdvice() {
+      const res = await fetch("https://api.adviceslip.com/advice?timestamp=" + new Date().getTime());
+      const data = await res.json();
+  
+      Advice_text.textContent = `"${data.slip.advice}"`;
+      Advice_id.textContent = `#${data.slip.id}`;
+    }
+    btn.addEventListener("click", getAdvice);
+
+    getAdvice();
+  </script>
+</body>
+
+</html>
