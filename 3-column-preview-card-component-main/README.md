@@ -42,8 +42,8 @@ Key requirements implemented in this solution:
 
 ### Links
 
-- Solution URL: (add your repository URL here)
-- Live Site URL: (add a hosted URL here, e.g., GitHub Pages)
+- [Solution URL](https://www.frontendmentor.io/solutions/3-column-preview-card-rZzV8hpmlu)
+- [Live Site URL](https://transcendent-sopapillas-5fb2e4.netlify.app/)
 
 ## My process
 
