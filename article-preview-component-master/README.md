@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/article-preview-tN1IRqHiNl)
+- [Live Site URL](https://soft-boba-677a01.netlify.app/)
 
 ## My process
 
