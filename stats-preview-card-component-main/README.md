@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/stats-preview-card-5yTUCGpQIJ)
+- [Live Site URL](https://lucky-empanada-010f25.netlify.app/)
 
 ## My process
 
