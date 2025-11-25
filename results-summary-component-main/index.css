@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+
+--Primary-Light-red: hsl(0, 100%, 67%);
+--Primary-Orangey-yellow: hsl(39, 100%, 56%);
+--Primary-Green-teal: hsl(166, 100%, 37%);
+--Primary-Cobalt-blue: hsl(234, 85%, 45%);
+
+--Gradients-Light-slate-blue-background: hsl(252, 100%, 67%);
+--Gradients-Light-royal-blue-background: hsl(241, 81%, 54%);
+--Gradients-Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Gradients-Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+--Neutral-White: hsl(0, 0%, 100%);
+--Neutral-Pale-blue: hsl(221, 100%, 96%);
+--Neutral-Light-lavender: hsl(241, 100%, 89%);
+--Neutral-Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    background-color: var(--Neutral-Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--Neutral-White);
+    border-radius: 16px;
+    width: 580px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container{
+    width: 50%;
+    background: linear-gradient(to bottom, var(--Gradients-Light-slate-blue-background), var(--Gradients-Light-royal-blue-background));
+    color: var(--Neutral-White);
+    padding: 30px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.left-container h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Neutral-Pale-blue);
+}
+
+.left-container .score-circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, var(--Gradients-Violet-blue-circle), var(--Gradients-Persian-blue-circle));
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container .score-circle .score-number{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.left-container .score-circle .score-out-of{
+    font-size: 14px;
+    color: var(--Neutral-Light-lavender);
+}
+
+.performance-text{
+    margin-top: 20px;
+}
+
+.performance-text h3{
+    color: var(--Neutral-White);
+}
+
+.performance-text P{
+    margin-top: 8px;
+    font-size: 16px;
+    color: var(--Neutral-Light-lavender);
+}
+
+.right-container{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-container h2{
+    color: var(--Neutral-Dark-gray-blue);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.right-container .summary-item{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.right-container .summary-item .item-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}  
+
+.item-score .score{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Neutral-Dark-gray-blue);
+}
+
+.item-score > span{
+    color: hsla(224, 30%, 27%, 0.4);
+     font-weight: 700;
+}
+
+.right-container .summary-item .item-info img{
+    width: 16px;
+    height: 16px;
+}
+
+.reaction{
+    color: var(--Primary-Light-red);
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.memory{
+    color: var(--Primary-Orangey-yellow);
+    background-color: rgba(255, 165, 0, 0.1);
+}
+
+.verbal{
+    color: var(--Primary-Green-teal);
+    background-color: rgba(0, 128, 128, 0.1);
+}
+
+.visual{
+    color: var(--Primary-Cobalt-blue);
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--Neutral-Dark-gray-blue);
+    color: var(--Neutral-White);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: linear-gradient(to bottom, 
+                var(--Gradients-Light-slate-blue-background), 
+                var(--Gradients-Light-royal-blue-background));
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .left-container, .right-container{
+        width: 100%;
+    }
+
+    .left-container{
+        border-radius: 0 0 16px 16px ;
+    }
+}
