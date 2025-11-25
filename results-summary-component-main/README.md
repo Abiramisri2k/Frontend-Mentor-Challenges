@@ -40,8 +40,8 @@ This project is a great opportunity to practice semantic HTML, CSS custom proper
 
 ### Links
 
-- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/results-summary-component)
-- [Live Demo](https://your-live-site-url.com)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/result-summary-38DC6MSG1X)
+- [Live Demo](https://frontend-mentor-challenges-4uot.vercel.app/)
 
 
 ## My process
