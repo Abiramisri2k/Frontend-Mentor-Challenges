@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/newsletter-sign-up-MTVOrGqwEk)
+- [Live Site URL](https://frontend-mentor-challenges-odi4.vercel.app/)
 
 ## My process
 
