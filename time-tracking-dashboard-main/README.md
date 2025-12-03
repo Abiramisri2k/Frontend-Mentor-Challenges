@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/time-tracking-dashboard-3jnclAGxJq)
+- [Live Site URL](https://phenomenal-gelato-a23617.netlify.app/)
 
 ## My process
 
