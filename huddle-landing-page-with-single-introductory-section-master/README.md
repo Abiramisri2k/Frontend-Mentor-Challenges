@@ -39,8 +39,8 @@ Experience a responsive design that works well on both desktop and mobile device
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-M3qEM1r8c3)
+- [Live Site URL](https://relaxed-raindrop-507020.netlify.app/)
 
 ## My process
 
